@@ -1,0 +1,35 @@
+baseURL = "https://www.nocture.dk/"
+buildDrafts = false
+languageCode = "en-us"
+theme = "hyde-hyde"
+title = "Jeppe Andersen Blog"
+
+
+[params]
+  author = "Jeppe Andersen"
+  authorimage = "/images/me.png"
+  description = "Code, cloud, continuous deployment"
+  favicon = false
+  themeColor = "theme-base-aa"
+  copyright = "© 2018 Jeppe Andersen"
+  highlightjs  = true
+  highlightjsstyle = "atom-one-dark"
+
+[params.social]
+    github = "jlandersen"
+    twitter = "nocture"
+    linkedin = "jeppelundandersen"
+
+[permalinks]
+  posts = "/:year/:month/:day/:slug/"
+
+[[menu.main]]
+    name = "Posts"
+    identifier = "posts"
+    weight = 100
+    url = "/posts/"
+[[menu.main]]
+  name = "About"
+  identifier = "about"
+  weight = 200
+  url = "/about/"
