@@ -1,10 +1,14 @@
-{{ define "header" -}}
+{{ define "header" }}
     {{ partial "header.html" . }}
-{{- end -}}
+{{ end }}
 
-{{ define "content" -}}
-    {{ partial "content_about.html" . }}
-{{- end -}}
+{{ define "content" }}
+    <div class="post">
+        <h1>{{ .Title }}</h1>
+        {{ .Content }}
+  </div>
+{{ end }}
 
-{{ define "footer" -}}
-{{- end -}}
+{{ define "footer" }}
+{{ partial "footer/font-awesome-js.html" . }}
+{{ end }}
