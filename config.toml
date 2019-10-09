@@ -11,7 +11,7 @@ title = "Jeppe Andersen Blog"
   description = "Code, cloud, continuous deployment"
   favicon = false
   themeColor = "theme-base-0f"
-  copyright = "© 2018 Jeppe Andersen"
+  copyright = "Jeppe Andersen"
   highlightjs  = true
   highlightjsstyle = "atom-one-dark"
 
