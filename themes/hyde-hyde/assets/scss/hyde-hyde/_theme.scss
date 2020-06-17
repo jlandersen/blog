@@ -77,12 +77,24 @@
 }
 .theme-base-0f {
 	.sidebar {
+		background-color: #8f5536;
+	}
+	.content a {
+		color: #8f5536;
+	}
+	.related-posts li a:hover {
+		color: #8f5536;
+	}
+}
+
+.theme-base-aa {
+	.sidebar {
 		background-color: #1f1d1c;
 	}
 	.content a {
-		color: #1f1d1c;
+		color: #6a9fb5;
 	}
 	.related-posts li a:hover {
-		color: #1f1d1c;
+		color: #6a9fb5;
 	}
 }
