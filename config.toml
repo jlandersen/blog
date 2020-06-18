@@ -8,7 +8,7 @@ title = "Jeppe Andersen Blog"
 [params]
   author = "Jeppe Andersen"
   authorimage = "/images/me.png"
-  description = "Code, cloud, continuous deployment"
+  description = "Code, Cloud, DevOps"
   favicon = false
   themeColor = "theme-base-aa"
   copyright = "Jeppe Andersen"
