@@ -1,7 +1,7 @@
 ---
 title: "Running a Kubernetes Cluster with Dashboard on Raspberry Pi 4"
 date: 2020-07-02T08:10:56+01:00
-draft: true
+draft: false
 tags: ["DevOps", "Raspberry Pi", "Kubernetes", "Docker", "Containers"]
 ---
 A Raspberry Pi can be used for many things - including running a Kubernetes cluster. This can be a fun way to learn more about Kubernetes as well as provide you with your own resources to run various containers. As an example, I use my cluster to run things like Kafka for my [open source work](https://marketplace.visualstudio.com/items?itemName=jeppeandersen.vscode-kafka). In this post I will describe how to set up a cluster of Pi devices to run Kubernetes 1.18.x.
