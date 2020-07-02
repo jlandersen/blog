@@ -201,6 +201,6 @@ Assuming you set up kubectl on your local machine, open a proxy:
 kubectl proxy
 ```
 
-Dashboard is now available at http://localhost:8001/api/v1/namespaces/kubernetes-dashboard/services/https:kubernetes-dashboard:/proxy/. Log in with the token from the previous output and you should now see your new cluster in all it's glory:
+Dashboard is now available at http://localhost:8001/api/v1/namespaces/kubernetes-dashboard/services/https:kubernetes-dashboard:/proxy/. Log in with the token from the previous output and you should now see your new cluster in all its glory:
 
 ![](/images/2020/07/kubedashboard.png)
