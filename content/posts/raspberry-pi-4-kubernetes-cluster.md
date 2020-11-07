@@ -32,7 +32,6 @@ First, configure the devices with hostnames that make them recognizable. Type `s
 - endurancemaster01
 - enduranceworker01
 - enduranceworker02
-- enduranceworker03
 
 Next are some configurations required for Kubernetes. Most of these instructions come from the [official kubeadm installation page](https://kubernetes.io/docs/setup/production-environment/tools/kubeadm/install-kubeadm/) but I highlight some changes you need for this to work on Pis. You need to do this on all the nodes.
 

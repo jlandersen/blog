@@ -7,7 +7,7 @@ tags: [".NET Core", "ASP.NET Core", "DevOps", "Observability", "Diagnostics"]
 ---
 
 
-The story around diagnostics tools is still evolving, but now have a good set of [tools available](https://github.com/dotnet/diagnostics). In my previous post, we tested the counters tool a bit. The most problematic part, currently, is to use these tools where the application is running as containers and extracting the dumped files for anaysis. In this post I will show examples of using these tools to troubleshoot .NET Core containers. I will focus on the `dump`, `trace` and `counters` tools, but anything should go for others as well.
+The story around diagnostics tools is still evolving, but we now have a good set of [tools available](https://github.com/dotnet/diagnostics). In my previous post, we tested the counters tool a bit. The most problematic part, currently, is to use these tools with containerized applications and extracting the dumped files for anaysis. In this post I will show examples of using these tools to troubleshoot .NET Core containers. I will focus on the `dump`, `trace` and `counters` tools, but everything should work for others as well.
 
 There are two issues being addressed:
  - Accessing the running dotnet process with the diagnostics tools
@@ -24,7 +24,7 @@ srw------- 1 root root    0 Jun 17 09:04 dotnet-diagnostic-1-213386-socket
 drwxr-xr-x 2 root root 4096 Jun 17 09:12 system-commandline-sentinel-files
  ```
 
-Maybe obvious from the file name, `dotnet-diagnostic-1-213386-socket` is the socket (otherwise, the *s* in the mode `srw` indicates it).
+Perhaps obvious from the file name, `dotnet-diagnostic-1-213386-socket` is the socket (otherwise, the *s* in the mode `srw` indicates it).
 
 With `socat` we can open the socket and say hello:
 
@@ -132,6 +132,6 @@ volumes:
 I am not doing any bind volumes here - to extract the collected files i'd bundle up the necessary scripts in the tools image to ship the files from /data to storage (unless you use a suitable volume driver as previously mentioned).
 
 # Conclusion
-Cross platform diagnostics is getting better for .NET Core. For now we still have to go through some hoops to get a smooth ride when trouble shooting applications, but it has reached a point where it has helped me several times. I am excited to see what is coming with, and after, .NET 5. For now, I hope this post gave some pointers to how you might go about getting more insights into your containerized .NET Core applications.
+Cross platform diagnostics is getting better for .NET Core. For now we still have to go through some hoops to get a smooth ride when troubleshooting applications, but it has definitely reached a point where it provides good value. I am excited to see what is next, both with the release of .NET 5, as well as after. For now, I hope this post gave some pointers to how you might go about getting more insights into your containerized .NET Core applications.
 
 
