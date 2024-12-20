@@ -17,7 +17,6 @@ title = "Jeppe Andersen Blog"
 
 [params.social]
     github = "jlandersen"
-    twitter = "nocture"
     linkedin = "jeppelundandersen"
 
 [permalinks]
@@ -28,6 +27,7 @@ title = "Jeppe Andersen Blog"
     identifier = "posts"
     weight = 100
     url = "/posts/"
+
 [[menu.main]]
   name = "About"
   identifier = "about"
