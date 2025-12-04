@@ -1,23 +1,40 @@
 baseURL = "https://www.nocture.dk/"
 buildDrafts = false
 languageCode = "en-us"
-theme = "hyde-hyde"
+theme = "PaperMod"
 title = "Jeppe Andersen Blog"
-
 
 [params]
   author = "Jeppe Andersen"
   authorimage = "/images/me.png"
-  description = "Code, Cloud, DevOps"
-  favicon = false
-  themeColor = "theme-base-aa"
+  description = "Code, Platform Engineering, YAML"
   copyright = "Jeppe Andersen"
   highlightjs  = true
   highlightjsstyle = "atom-one-dark"
+  disableThemeToggle = true
+  defaultTheme = "black"
+  env = "production"
 
-[params.social]
-    github = "jlandersen"
-    linkedin = "jeppelundandersen"
+[params.assets]
+  favicon = "assets/favicon.ico"
+  favicon32x32 = "assets/favicon-32x32.png"
+  favicon16x16 = "assets/favicon-16x16.png"
+  apple_touch_icon = "assets/apple-touch-icon-144-precomposed.png"
+
+
+[params.footer]
+  hideCopyright = false
+
+[params.profileMode]
+  enabled = false
+
+[params.homeInfoParams]
+  content = "Code, Platform Engineering, YAML"
+
+[[params.socialIcons]]
+  name = "linkedin"
+  title = "LinkedIn"
+  url = "https://linkedin.com/in/jeppelundandersen"
 
 [permalinks]
   posts = "/:year/:month/:day/:slug/"
