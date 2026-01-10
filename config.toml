@@ -1,4 +1,4 @@
-baseURL = "https://jlandersen.github.io/blog/"
+baseURL = "https://www.nocture.dk/"
 buildDrafts = false
 languageCode = "en-us"
 theme = "PaperMod"
