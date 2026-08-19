@@ -1,6 +1,6 @@
 baseURL = "https://nocture.dk/"
 buildDrafts = false
-languageCode = "en-us"
+locale = "en-us"
 theme = "PaperMod"
 title = "Jeppe Andersen Blog"
 

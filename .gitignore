@@ -2,3 +2,5 @@
 
 # Output folder
 public/
+
+.hugo_build.lock
